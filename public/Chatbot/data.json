@@ -1,0 +1,785 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["Hi there", "How are you", "Is anyone there?", "Hey", "Hola", "Hello", "Good day"],
+      "responses": ["Hello, thanks for asking", "Good to see you again", "Hi there, how can I help?"],
+      "context": [""]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
+      "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
+      "context": [""]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+      "responses": ["Happy to help!", "Any time!", "My pleasure"],
+      "context": [""]
+    },
+    {
+      "tag": "noanswer",
+      "patterns": [".","1","2","3","4","5","6","7","8","9","0","?"," "],
+      "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"],
+      "context": [""]
+    },
+        {
+      "tag": "general",
+      "patterns": [
+        "help me",
+        "help",
+        "Help me out",
+        "Can you assist me?",
+        "I need help",
+        "What can you help me with?",
+        "Can you provide assistance?",
+        "Help me with something",
+        "Assist me please"
+      ],
+      "responses": [
+        "Of course! I'm here to help. What do you need assistance with?",
+        "Sure, I'm here to assist you. What can I do for you?",
+        "Certainly! How may I assist you?",
+        "I'm here to help. What do you need support with?",
+        "Sure thing! How can I assist you today?",
+        "Absolutely! Let me know how I can help you."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "specifications",
+      "patterns": [
+        "What is your specification?",
+        "Tell me about your specifications",
+        "Can you share your specifications?",
+        "What are your features?",
+        "What makes you unique?",
+        "Tell me your capabilities",
+        "What can you do?"
+      ],
+      "responses": [
+        "I am a chatbot designed to provide information and assistance. I can help with a variety of topics. Feel free to ask me anything!",
+        "I am a general-purpose chatbot capable of answering questions and engaging in conversation. How can I assist you?",
+        "I'm a chatbot designed to help and provide information. Ask me anything you'd like to know!",
+        "I don't have personal specifications, but I'm here to help with any questions or information you need.",
+        "I'm a language model chatbot created to assist with various queries. What would you like to know?"
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "identity",
+      "patterns": [
+        "Who are you?",
+        "What is your name?",
+        "Can you introduce yourself?",
+        "Tell me about yourself",
+        "What do they call you?",
+        "Who created you?",
+        "What is your identity?"
+      ],
+      "responses": [
+        "I'm a chatbot created by OpenAI. You can call me ChatGPT. How can I assist you today?",
+        "I'm ChatGPT, a chatbot designed to help and provide information. What can I do for you?",
+        "I'm ChatGPT, an AI language model. How may I assist you?",
+        "You can call me ChatGPT. I'm here to help and provide information.",
+        "I'm a chatbot created by OpenAI, known as ChatGPT. How can I assist you today?"
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "website-details",
+      "patterns": [
+        "What is this website?",
+        "Tell me about this website",
+        "Can you provide details about this website?",
+        "What can I find on this website?",
+        "Explain this website to me",
+        "Give me information about this site",
+        "What is the purpose of this website?"
+      ],
+      "responses": [
+        "This website is designed to The fast-paced work culture often leads to neglect of family life, causing many to dream of a hassle-free home without plumbing issues, furniture repairs, or service disruptions. To address this, a system has been developed to provide household services through a website with a virtual assistant AI bot. The platform, built on Laravel framework and PHP, offers skilled workers a dedicated login to showcase their expertise, facilitating opportunities and income for professionals. It features multiple service categories and is flexible, allowing services to be scheduled from anywhere. Feel free to explore and ask if you have specific questions!",
+        "This website is a platform for The fast-paced work culture often leads to neglect of family life, causing many to dream of a hassle-free home without plumbing issues, furniture repairs, or service disruptions. To address this, a system has been developed to provide household services through a website with a virtual assistant AI bot. The platform, built on Laravel framework and PHP, offers skilled workers a dedicated login to showcase their expertise, facilitating opportunities and income for professionals. It features multiple service categories and is flexible, allowing services to be scheduled from anywhere. How can I assist you with information?",
+        "On this website, you can The fast-paced work culture often leads to neglect of family life, causing many to dream of a hassle-free home without plumbing issues, furniture repairs, or service disruptions. To address this, a system has been developed to provide household services through a website with a virtual assistant AI bot. The platform, built on Laravel framework and PHP, offers skilled workers a dedicated login to showcase their expertise, facilitating opportunities and income for professionals. It features multiple service categories and is flexible, allowing services to be scheduled from anywhere. If you have any questions, feel free to ask!",
+        "This website serves as a platform for The fast-paced work culture often leads to neglect of family life, causing many to dream of a hassle-free home without plumbing issues, furniture repairs, or service disruptions. To address this, a system has been developed to provide household services through a website with a virtual assistant AI bot. The platform, built on Laravel framework and PHP, offers skilled workers a dedicated login to showcase their expertise, facilitating opportunities and income for professionals. It features multiple service categories and is flexible, allowing services to be scheduled from anywhere. How can I help you navigate or find information?",
+        "The purpose of this website is to The fast-paced work culture often leads to neglect of family life, causing many to dream of a hassle-free home without plumbing issues, furniture repairs, or service disruptions. To address this, a system has been developed to provide household services through a website with a virtual assistant AI bot. The platform, built on Laravel framework and PHP, offers skilled workers a dedicated login to showcase their expertise, facilitating opportunities and income for professionals. It features multiple service categories and is flexible, allowing services to be scheduled from anywhere. If you have any specific inquiries, feel free to let me know!"
+      ],
+      "context": [""]
+    },
+
+    {
+      "tag": "services",
+      "patterns": ["What services do you offer?", "Tell me about your services", "List of services", "Service categories"],
+      "responses": ["We offer a variety of services, including AC, beauty, plumbing, electrical, Shower Filter, Home Cleaning, Carpentry, Pest Control, Chimney Hob, Water Purifier, Computer Repair, TV, Refrigerator, Geyser, Car, Document, Movers & Packers, Home Automation, Laundry, Painting. How can I assist you today?"],
+      "context": [""]
+    },
+    {
+       "tag": "service-specific_AC",
+       "patterns": [
+                    "AC",
+                    "Tell me about your AC services","What can you tell me about AC?","Give me information on your AC services","I want to know more about AC",
+                    "Can you share details about your AC services?",
+                    "What kind of services do you offer for AC?",
+                    "Tell me about AC maintenance",
+                    "Do you provide installation services for AC?",
+                    "Information about AC repairs",
+                    "Can you help with my AC problems?"
+      ],
+      "responses": ["For AC, we offer installation, repair, and maintenance services. Whether you need a new AC installed or your existing one needs repairs, we've got you covered. How can I assist you with AC today?"],
+      "context": [""]
+    },
+   {
+      "tag": "service-specific_beauty",
+      "patterns": [
+                   "beauty",
+                   "Tell me about your beauty services",
+                   "What can you tell me about beauty services?",
+                   "Give me information on your beauty services",
+                   "I want to know more about beauty services",
+                   "Can you share details about your beauty services?",
+                   "What kind of services do you offer for beauty?",
+                   "Tell me about beauty services maintenance",
+                   "Do you provide beauty services installations?",
+                   "Information about beauty services repairs",
+                   "Can you help with my beauty services needs?"
+      ],
+      "responses": ["Our beauty services include haircuts, styling, manicures, pedicures, and more. Whether you're looking for a relaxing spa day or a quick beauty treatment, we have a range of services to suit your needs. How can I assist you with beauty services today?"],
+      "context": [""]
+    },
+    {
+      "tag": "service-specific_plumbing",
+      "patterns": [
+                   "plumbing",
+                   "Tell me about your plumbing services",
+                   "What can you tell me about plumbing?",
+                   "Give me information on your plumbing services",
+                   "I want to know more about plumbing",
+                   "Can you share details about your plumbing services?",
+                   "What kind of services do you offer for plumbing?",
+                   "Tell me about plumbing maintenance",
+                   "Do you provide installation services for plumbing?",
+                   "Information about plumbing repairs",
+                   "Can you help with my plumbing problems?"
+      ],
+      "responses": ["For plumbing, we offer services including leak repairs, installations, and general maintenance. If you're facing any plumbing issues or need a new plumbing fixture installed, we can help. How can I assist you with plumbing today?"],
+      "context": [""]
+    },
+    {
+      "tag": "service-specific_electrical",
+      "patterns": [
+        "electrical",
+        "electri",
+        "Tell me about your electrical services",
+        "What can you tell me about electrical services?",
+        "Give me information on your electrical services",
+        "I want to know more about electrical services",
+        "Can you share details about your electrical services?",
+        "What kind of services do you offer for electrical?",
+        "Tell me about electrical services maintenance",
+        "Do you provide electrical services installations?",
+        "Information about electrical services repairs",
+        "Can you help with my electrical services needs?"
+      ],
+      "responses": ["Our electrical services include wiring, repairs, and installations. Whether you need help with electrical maintenance or want to install new fixtures, we've got skilled professionals to assist you. How can I help you with electrical services today?"],
+      "context": [""]
+    },
+    {
+      "tag": "service-specific_shower",
+      "patterns": [
+        "shower filter",
+        "shower",
+        "filter",
+        "Tell me about your shower filter services",
+        "What can you tell me about shower filter services?",
+        "Give me information on your shower filter services",
+        "I want to know more about shower filter services",
+        "Can you share details about your shower filter services?",
+        "What kind of services do you offer for shower filters?",
+        "Tell me about shower filter services maintenance",
+        "Do you provide shower filter installations?",
+        "Information about shower filter services repairs",
+        "Can you help with my shower filter services needs?"
+      ],
+      "responses": ["For shower filters, we offer installation, maintenance, and repair services. Whether you need a new shower filter installed or your existing one needs maintenance, we've got you covered. How can I assist you with shower filter services today?"],
+      "context": [""]
+    },
+    {
+      "tag": "service-specific_home-cleaning",
+      "patterns": [
+        "home cleaning",
+        "home",
+        "cleaning",
+        "Tell me about your home cleaning services",
+        "What can you tell me about home cleaning services?",
+        "Give me information on your home cleaning services",
+        "I want to know more about home cleaning services",
+        "Can you share details about your home cleaning services?",
+        "What kind of services do you offer for home cleaning?",
+        "Tell me about home cleaning services maintenance",
+        "Do you provide home cleaning services installations?",
+        "Information about home cleaning services repairs",
+        "Can you help with my home cleaning services needs?"
+      ],
+      "responses": ["Our home cleaning services cover a range of tasks, including general cleaning, deep cleaning, and special cleaning projects. Whether you need a one-time service or a regular cleaning schedule, we have options to fit your needs. How can I assist you with home cleaning services today?"],
+      "context": [""]
+    },
+    {
+      "tag": "service-specific_carpentry",
+      "patterns": [
+        "carpentry",
+        "Tell me about your carpentry services",
+        "What can you tell me about carpentry services?",
+        "Give me information on your carpentry services",
+        "I want to know more about carpentry services",
+        "Can you share details about your carpentry services?",
+        "What kind of services do you offer for carpentry?",
+        "Tell me about carpentry services maintenance",
+        "Do you provide carpentry services installations?",
+        "Information about carpentry services repairs",
+        "Can you help with my carpentry services needs?"
+      ],
+      "responses": ["Our carpentry services cover a range of tasks, including furniture assembly, repairs, and custom woodworking projects. Whether you have a specific project in mind or need general carpentry assistance, we're here to help. How can I assist you with carpentry services today?"],
+      "context": [""]
+    },
+    {
+      "tag": "service-specific_pest",
+      "patterns": [
+        "pest control",
+        "pest",
+        "control",
+        "Tell me about your pest control services",
+        "What can you tell me about pest control services?",
+        "Give me information on your pest control services",
+        "I want to know more about pest control services",
+        "Can you share details about your pest control services?",
+        "What kind of services do you offer for pest control?",
+        "Tell me about pest control services maintenance",
+        "Do you provide pest control services installations?",
+        "Information about pest control services repairs",
+        "Can you help with my pest control services needs?"
+      ],
+      "responses": ["Our pest control services include inspections, treatments, and prevention plans. Whether you're dealing with a current pest issue or want to prevent future infestations, our experts can assist you. How can I assist you with pest control services today?"],
+      "context": [""]
+    },
+    {
+      "tag": "service-specific_water_purifier",
+      "patterns": [
+        "water purifier",
+        "water",
+        "purifier",
+        "Tell me about your water purifier services",
+        "What can you tell me about water purifier services?",
+        "Give me information on your water purifier services",
+        "I want to know more about water purifier services",
+        "Can you share details about your water purifier services?",
+        "What kind of services do you offer for water purifiers?",
+        "Tell me about water purifier services maintenance",
+        "Do you provide water purifier services installations?",
+        "Information about water purifier services repairs",
+        "Can you help with my water purifier services needs?"
+      ],
+      "responses": ["For water purifiers, we offer installation, maintenance, and filter replacement services. Whether you need a new water purifier installed or your existing one needs maintenance, we've got you covered. How can I assist you with water purifier services today?"],
+      "context": [""]
+    },
+    {
+      "tag": "service-specific_computer",
+      "patterns": [
+        "computer repair",
+        "computer",
+        "Tell me about your computer repair services",
+        "What can you tell me about computer repair services?",
+        "Give me information on your computer repair services",
+        "I want to know more about computer repair services",
+        "Can you share details about your computer repair services?",
+        "What kind of services do you offer for computer repair?",
+        "Tell me about computer repair services maintenance",
+        "Do you provide computer repair services installations?",
+        "Information about computer repair services repairs",
+        "Can you help with my computer repair services needs?"
+      ],
+      "responses": ["Our computer repair services cover a range of issues, including hardware and software problems. Whether you need a quick fix or a more in-depth repair, our technicians are ready to assist you. How can I help you with computer repair services today?"],
+      "context": [""]
+    },
+     {
+      "tag": "registeration",
+      "patterns": [
+        "register",
+        "How do I register?",
+        "Registration process",
+        "Sign up",
+        "Create an account"
+      ],
+      "responses": [
+        "To register, click on the 'Sign Up' button on the top right corner of the page. You'll be guided through the process to create your account. Ready to get started?"
+      ],
+      "context": [" "]
+    },
+    {
+      "tag": "booking",
+      "patterns": [
+        "How can I book a service?",
+        "Booking process",
+        "Book a service",
+        "How to schedule a service?"
+      ],
+      "responses": [
+        "Booking a service is easy! You can browse through our categories or use the search bar to find the service you need. Once found, click on it and follow the prompts to book."
+      ],
+      "context": [" "]
+    },
+    {
+      "tag": "payment",
+      "patterns": [
+        "What payment methods do you accept?",
+        "Payment options",
+        "How to pay?"
+      ],
+      "responses": [
+        "We accept various payment methods, including credit/debit cards, PayPal, and online banking. You can choose your preferred method during the checkout process."
+      ],
+      "context": [" "]
+    },
+    {
+      "tag": "search",
+      "patterns": [
+        "How do I use the search bar?",
+        "Searching for services",
+        "Can I search for specific services?",
+        "How does the search function work?"
+      ],
+      "responses": [
+        "Our search bar allows you to find specific services quickly. Simply type in keywords, service names, or categories related to the service you're looking for, and the search will display relevant results."
+      ],
+      "context": [" "]
+    },
+    {
+      "tag": "search_refine",
+      "patterns": [
+        "Can I refine search results?",
+        "Filtering search options",
+        "How to narrow down search results?"
+      ],
+      "responses": [
+        "After performing a search, you can use filters or sorting options available on the search results page to refine and narrow down your search based on price, ratings, availability, and other preferences."
+      ],
+      "context": [" "]
+    },
+    {
+      "tag": "search_accuracy",
+      "patterns": [
+        "How to get more accurate search results?",
+        "Search accuracy tips",
+        "Improving search precision"
+      ],
+      "responses": [
+        "For more accurate results, try using specific keywords or phrases related to the service you need. You can also explore our service categories for a more structured search experience."
+      ],
+      "context": [" "]
+    },
+    {
+      "tag": "navigation",
+      "patterns": [
+        "How do I navigate through the website?",
+        "Navigation bar usage",
+        "What options are in the navigation bar?",
+        "Accessing different sections"
+      ],
+      "responses": [
+        "Our navigation bar provides easy access to different sections of the website. You can find service categories, appliances, home needs, home cleanings, special services, login, and register options for a seamless browsing experience."
+      ],
+      "context": [" "]
+    },
+    {
+      "tag": "service_categories",
+      "patterns": [
+        "How to explore service categories?",
+        "Navigating through services",
+        "What services are available?"
+      ],
+      "responses": [
+        "By hovering over 'Service Categories' in the navigation bar, you can explore various service options available. Each category provides a dropdown menu showcasing specific services under that category, making it easier to find what you're looking for."
+      ],
+
+      "context": [" "]
+    },
+    {
+      "tag": "home_cleaning_subcategories",
+      "patterns": [
+        "What options are available under home cleanings?",
+        "Details about home cleaning services",
+        "Subcategories under home cleanings"
+      ],
+      "responses": [
+        "Hovering over 'Home Cleanings' in the navigation bar reveals various options for home cleaning services, including options like deep cleaning, regular cleaning, upholstery cleaning, floor cleaning, and more. You can explore these options by hovering or clicking for more details."
+      ],
+
+      "context": [" "]
+    },
+    {
+      "tag": "contact_info",
+      "patterns": [
+        "What is your contact number?",
+        "How can I contact you?",
+        "Do you have a phone number?",
+        "Contact details"
+      ],
+      "responses": [
+        "You can reach us at our helpline number +123456789 or drop us an email at support@homeservice.com for any assistance or queries. We're here to help!"
+      ],
+      "context": [" "]
+    },
+    {
+      "tag": "support_email",
+      "patterns": [
+        "What is your support email?",
+        "How do I contact support?",
+        "Support email address"
+      ],
+
+      "responses": [
+        "Our support team can be contacted at support@homeservice.com. Feel free to reach out to us via email for any help or inquiries."
+      ],
+      "context": [" "]
+    },
+    {
+      "tag": "location",
+      "patterns": [
+        "Where are you located?",
+        "What is your address?",
+        "Location details",
+        "Where is your service based?"
+      ],
+      "responses": [
+        "Our service is based in Pune. While we primarily operate online, our administrative office is located at [Your Address, Pune]. Feel free to contact us for any inquiries or support!"
+      ],
+      "context": [" "]
+    },
+    {
+      "tag": "registration_issue_email",
+      "patterns": [
+        "My email is already registered",
+        "Email already in use",
+        "Problem with email during registration"
+      ],
+      "responses": [
+        "If you're encountering an issue where your email is already registered, try using the 'Forgot Password' option to reset your password. If the problem persists, please contact our support team at support@homeservice.com for further assistance."
+      ],
+      "context": [" "]
+    },
+    {
+      "tag": "registration_issue_password",
+      "patterns": [
+        "Password complexity requirements",
+        "Password not accepted",
+        "Issues with password creation"
+      ],
+      "responses": [
+        "During registration, ensure your password meets our security requirements, such as including a mix of uppercase, lowercase, numbers, and special characters. If you're having trouble creating a password, try a unique combination that meets these criteria."
+      ],
+      "context": [" "]
+    },
+    {
+      "tag": "registration_issue_verification",
+      "patterns": [
+        "Didn't receive verification email",
+        "Problem with verification email",
+        "Verification link not received"
+      ],
+
+      "responses": [
+        "Check your spam or junk folders for the verification email. If it's not there, please wait a few minutes for it to arrive. If you still haven't received it, click on 'Resend Verification Email' or contact our support team for assistance."
+      ],
+      "context": [" "]
+    },
+    {
+      "tag": "website_details_1",
+      "patterns": [
+        "Tell me about your website",
+        "What is your website about?",
+        "Website details",
+        "About the website"
+      ],
+      "responses": [
+        "Our website is a platform designed to facilitate easy booking of home services. We offer a wide range of services including AC repair, plumbing, electrical, home cleaning, and more. Users can easily find and book services based on their needs."
+      ],
+      "context": [" "]
+    },
+    {
+      "tag": "about_us",
+      "patterns": [
+        "Where can I find 'About Us'?",
+        "Information about your company",
+        "About the company"
+      ],
+      "responses": [
+        "You can find detailed information about our company in the 'About Us' section located in the footer of our website. It provides insights into our vision, mission, and the services we offer."
+      ],
+      "context": [" "]
+    },
+    {
+      "tag": "website_features",
+      "patterns": [
+        "What features does your website have?",
+        "Unique features of your platform",
+        "Special functionalities"
+      ],
+      "responses": [
+        "Our website offers easy navigation through service categories, a user-friendly search bar, secure payment options, detailed service descriptions, customer reviews, and a seamless booking process."
+      ],
+      "context": [" "]
+    },
+    {
+      "tag": "service_provider_become",
+      "patterns": [
+        "How can I become a service provider?",
+        "Become a service provider",
+        "Provider registration"
+      ],
+      "responses": [
+        "To become a service provider, you can register on our platform by selecting the 'Service Provider' option during the registration process. Fill in your details, services offered, and verification requirements to get started."
+      ],
+
+      "context": [" "]
+    },
+    {
+      "tag": "service_provider_benefits",
+      "patterns": [
+        "What are the benefits of being a service provider?",
+        "Advantages for providers",
+        "Service provider perks"
+      ],
+
+      "responses": [
+        "As a service provider on our platform, you'll gain access to a wide customer base, flexible scheduling, transparent payment systems, and the opportunity to showcase your services to potential clients."
+      ],
+
+      "context": [" "]
+    },
+    {
+      "tag": "provider_verification",
+      "patterns": [
+        "How does provider verification work?",
+        "Verification process for providers",
+        "Provider validation"
+      ],
+      "responses": [
+        "We verify service providers to ensure the quality and reliability of services offered. The verification process includes validating qualifications, background checks, and confirming the authenticity of provided information."
+      ],
+
+      "context": [" "]
+    },
+    {
+      "tag": "provider_support",
+      "patterns": [
+        "Do you offer support for service providers?",
+        "Support for providers",
+        "Provider assistance"
+      ],
+      "responses": [
+        "Yes, we provide dedicated support for service providers. You can reach out to our support team at providersupport@homeservice.com for any assistance or inquiries."
+      ],
+      "context": [" "]
+    },
+    {
+      "tag": "admin_access",
+      "patterns": [
+        "How can I access the admin panel?",
+        "Admin login",
+        "Accessing admin section"
+      ],
+      "responses": [
+        "Access to the admin panel is restricted and available to authorized personnel only. If you're an admin, log in using your admin credentials through the designated admin login page."
+      ],
+
+      "context": [" "]
+    },
+    {
+      "tag": "admin_functions",
+      "patterns": [
+        "What functions does the admin panel offer?",
+        "Admin features",
+        "Capabilities of the admin section"
+      ],
+
+      "responses": [
+        "The admin panel provides various functions such as managing user accounts, overseeing service provider details, handling service requests, reviewing feedback, and maintaining the overall functionality of the platform."
+      ],
+
+      "context": [" "]
+    },
+    {
+      "tag": "admin_support",
+      "patterns": [
+        "Is there support available for admins?",
+        "Admin assistance",
+        "Help for admin users"
+      ],
+
+      "responses": [
+        "Yes, we offer support for admins. For any admin-related queries or assistance, please contact our admin support team at quickhomecare@gmail.com."
+      ],
+
+      "context": [" "]
+    },
+    {
+      "tag": "user_registration1",
+      "patterns": [
+        "How do I register as a user?",
+        "User sign up",
+        "Registration process for customers"
+      ],
+      "responses": [
+        "To register as a user, click on the 'Sign Up' button, fill in the required details, and create your account. You'll then have access to our services and features as a registered user."
+      ],
+
+      "context": [" "]
+    },
+    {
+      "tag": "user_profile_management1",
+      "patterns": [
+        "How can I manage my user profile?",
+        "Editing user profile",
+        "User account settings"
+      ],
+      "responses": [
+        "You can manage your user profile by logging into your account and accessing the 'Profile' or 'Account Settings' section. Here, you can update personal information, change preferences, and manage your bookings."
+      ],
+
+      "context": [" "]
+    },
+    {
+      "tag": "user_support1",
+      "patterns": [
+        "Is there support available for users?",
+        "Customer assistance",
+        "Help for users"
+      ],
+
+      "responses": [
+        "Yes, we offer support for our users. If you need assistance or have any questions, please reach out to our customer support team at customersupport@homeservice.com."
+      ],
+
+      "context": [" "]
+    },
+    {
+      "tag": "user_benefits",
+      "patterns": [
+        "What are the benefits of being a registered user?",
+        "Advantages for customers",
+        "User perks"
+      ],
+
+      "responses": [
+        "As a registered user, you'll have access to exclusive offers, personalized recommendations, quicker booking processes, and the ability to track and manage your service requests more efficiently."
+      ],
+      "context": [" "]
+    },
+    {
+      "tag": "service_guarantee",
+      "patterns": [
+        "Do you offer a service guarantee?",
+        "What is your service assurance?",
+        "Service reliability"
+      ],
+      "responses": [
+        "We ensure quality service and customer satisfaction. Our platform strives to provide reliable services, and if you encounter any issues, please contact our support team, and we'll work to resolve it promptly."
+      ],
+
+      "context": [" "]
+    },
+    {
+      "tag": "satisfaction_assurance",
+      "patterns": [
+        "Is customer satisfaction guaranteed?",
+        "Satisfaction assurance",
+        "Guarantee of service quality"
+      ],
+      "responses": [
+        "Customer satisfaction is our priority. We aim to deliver high-quality services, and if you're not satisfied, we're committed to addressing your concerns to ensure a positive experience."
+      ],
+
+      "context": [" "]
+    },
+    {
+      "tag": "refund_policy",
+      "patterns": [
+        "What is your refund policy?",
+        "Refund guarantee",
+        "Policy on refunds"
+      ],
+      "responses": [
+        "We have a refund policy in place. If you're unsatisfied with a service, contact our support team within the specified timeframe, and we'll initiate the refund process based on our refund policy guidelines."
+      ],
+      "context": [" "]
+    },
+
+     {
+      "tag": "computer_repair",
+      "patterns": ["Service provider for Computer Repair", "Need help with my computer", "Computer repair services", "Fix my computer", "Computer assistance"],
+      "responses": [
+        "Chetanya Rathi\nemail: chetanya.rathi20@vit.edu\nphone: 8830451805\ncity: Pune\nservice_category: Computer Repair\nservice_locations: Pimple Saudagar Pune Pimpri Chinchwad Municipal Corporation Pin Code: 411027."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "tv_service",
+      "patterns": ["Service provider for TV", "TV repair services", "Fix my television", "Need help with my TV", "Television assistance"],
+      "responses": [
+        "Radhika Sharma\nemail: radhika.sharma23@gmail.com\nphone: 9000022222\ncity: Malad, Mumbai, India\nservice_category: TV\nservice_locations: Malad, Mumbai, India, 400064."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "refrigerator_service",
+      "patterns": ["Find Refrigerator service provider", "Refrigerator repair services", "Fix my fridge", "Need help with my refrigerator", "Refrigerator assistance"],
+      "responses": [
+        "Siddharth Verma\nemail: siddharth.verma89@gmail.com\nphone: 9000033333\ncity: Koramangala, Bangalore, India\nservice_category: Refrigerator\nservice_locations: Koramangala, Bangalore, India, 560034."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "plumbing_service",
+      "patterns": ["Plumbing service provider", "Need a plumber", "Plumbing repair services", "Fix my plumbing", "Plumbing assistance"],
+      "responses": [
+        "Priya Singh\nemail: priya.singh76@gmail.com\nphone: 9000044444\ncity: Banjara Hills, Hyderabad, India\nservice_category: Plumbing\nservice_locations: Banjara Hills, Hyderabad, India, 500034.",
+        "Rohan Patel\nemail: rohan.patel45@gmail.com\nphone: 9000055555\ncity: Salt Lake City, Kolkata, India\nservice_category: Plumbing\nservice_locations: Salt Lake City, Kolkata, India, 700064."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "pest_control",
+      "patterns": ["Pest Control in Indore", "Need pest control services", "Pest removal services", "Get rid of pests", "Indore pest control"],
+      "responses": [
+        "Tanvi Mehta\nemail: tanvi.mehta33@gmail.com\nphone: 9284662765\ncity: Vijay Nagar, Indore, India\nservice_category: Pest Control\nservice_locations: Vijay Nagar, Indore, India, 452010."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "home_cleaning",
+      "patterns": ["Home Cleaning in Hyderabad", "Professional home cleaning services", "Clean my house", "Housekeeping in Hyderabad", "Hyderabad home cleaning"],
+      "responses": [
+        "Karthik Reddy\nemail: karthik.reddy72@gmail.com\nphone: 7456879834\ncity: Jubilee Hills, Hyderabad, India\nservice_category: Home Cleaning\nservice_locations: Jubilee Hills, Hyderabad, India, 500033."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "painting_service",
+      "patterns": ["Painting service in Pune", "Professional painting services", "Paint my house", "Pune painting services", "House painting in Pune"],
+      "responses": [
+        "Niharika Gupta\nemail: niharika.gupta57@gmail.com\nphone: 9000077777\ncity: Hinjewadi, Pune, India\nservice_category: Painting\nservice_locations: Hinjewadi, Pune, India, 560066.",
+        "Devansh Sharma\nemail: devansh.sharma09@gmail.com\nphone: 9000099999\ncity: Hinjewadi, Pune, India\nservice_category: Painting\nservice_locations: Hinjewadi, Pune, India, 411057."
+      ],
+      "context": [""]
+    },
+    {
+      "tag": "electrical_service",
+      "patterns": ["Electrical service provider in Gurgaon", "Electrician services in Gurgaon", "Fix my electrical issues", "Gurgaon electrical services", "Need an electrician in Gurgaon"],
+      "responses": [
+        "Ankit Malhotra\nemail: ankit.malhotra88@gmail.com\nphone: 9000000000\ncity: Sector 15, Gurgaon, India\nservice_category: Electrical\nservice_locations: Sector 15, Gurgaon, India, 122001."
+      ],
+      "context": [""]
+    }
+ 
+  ]
+}
