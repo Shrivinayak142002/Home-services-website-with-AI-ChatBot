@@ -1,28 +1,7 @@
 ## Home Service Laravel Application
 
-## Demo
 
-https://home-services.jitinrathore.com/
 
-### Home Service Provider Home Page
-
-![Surf-Service-Home](https://user-images.githubusercontent.com/93995641/172636129-c202bcad-0971-4a44-bbeb-b4ba1ed0f6dd.png)
-
-### Service Category Page
-
-![Surf-Service-Categories](https://user-images.githubusercontent.com/93995641/172636147-1e5a6d82-6502-49b6-b7b3-e66a96841c33.png)
-
-### Service Category Details Page
-
-![Surf-Service-Category-Details](https://user-images.githubusercontent.com/93995641/172636161-3582e60a-9751-4c78-90e1-06565363861b.png)
-
-### Admin All Services Details Page
-
-![Surf-Service-Admin-All-Services](https://user-images.githubusercontent.com/93995641/172636173-94b9d39b-a3af-4609-b11c-a82a30fbadcc.png)
-
-### Admin All Service Provider Details Page
-
-![Surf-Service-Online-Service-Provider](https://user-images.githubusercontent.com/93995641/172636183-0b2d39b7-9d31-4b14-9126-32ab4128eb54.png)
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
